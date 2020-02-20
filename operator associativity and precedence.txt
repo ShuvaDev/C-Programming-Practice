@@ -1,0 +1,16 @@
+    precedence                            Associativity
+    1.  () [] -> . ++ --                      L to R
+    2.  + - ++ -- ~ (cast) sizeof !           R to L
+    3.  * / %                                 L to R
+    4.  + -                                   L to R
+    5.  >> <<                                 L to R
+    6.  < > >= <=                             L to R
+    7.  == !=                                 L to R
+    8.  &                                     L to R
+    9.  ^                                     L to R
+    10. |                                     L to R
+    11. &&                                    L to R
+    12. ||                                    L to R
+    13. ?:                                    R to L
+    14. = += -= *= /= &= |= >>= <<=           R to L
+    15. ,                                     L to R

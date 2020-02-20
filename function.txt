@@ -1,0 +1,35 @@
+1. If we declare a function as a static we can't access it from another file.
+2. If we call a function then activation record of function will store in stack.
+3. In activation record have 3 things:
+	i)   Local variable of function.
+	ii)  Parameter of a function. 
+	iii) Return address of caller function.
+4. We can declare protype in locally. Which means we can declare a protype of a function inside another
+   function.
+5. There are two scoping. 
+	i)  Static scoping. (Most of the modern lang. follow this scoping)
+	ii) Dynamic scoping.(Perl pro. lang. follow static and dynamic both scoping)
+	=> In static scoping function search variable on his own block and if he not find then he search
+	   in global scope and so on.
+        => In dynamic scoping function search variable on his own block and if he not find then he
+           search in caller function and if not find then search those function which called by another
+	   function.
+6. Recursive are 4 type: 
+	i)  Direct
+	ii) Indirect
+	iii)Tail : If the recursive is the last thing done by the function and there  is no need to keep previous state.
+	iv) Non-tail : If there is something left to evaluate. It is not last thing done by function.
+	ex(Non-tail): 
+	#include<stdio.h>
+	void print(int n)
+	{
+	    if(n==0)
+        	return;
+	    print(n-1);
+	    printf("%d ",n);
+	}
+	int main()
+	{
+	    print(10);
+	    return 0;
+	}

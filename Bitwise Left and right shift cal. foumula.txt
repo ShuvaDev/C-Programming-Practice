@@ -1,0 +1,5 @@
+Left shift: first operand * 2^second operand.
+Ex: 3<<1  : 3 * 2^1 = 6
+
+Right shift: first operand / 2^second operand.
+Ex: 3>>1  : 3 / 2^1 = 1
